@@ -1,0 +1,181 @@
+/* شروع سکشن پرومو / Start promo section */
+.promo-section {
+  background-image: url('../../assets/images/image8.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+
+/* شروع محتوای پرومو / Start promo content */
+.promo-content h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.promo-content p {
+  font-size: 1.5em;
+  margin: 20px 0;
+  line-height: 1.5;
+  animation: fadeInUp 1s ease-in;
+}
+
+/* شروع انیمیشن‌ها / Start animations */
+@keyframes slideInFromLeft {
+  from { opacity: 0; transform: translateX(-50px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* شروع کانتینر اصلی / Start promo container */
+.promo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+
+/* سکشن چپ پرومو / Left promo section */
+.promo-section {
+  background: linear-gradient(rgba(25, 2, 69, 0.44), rgba(20, 20, 20, 0.44)),
+              url('../../assets/images/image8.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  color: #fff;
+  padding: 20px 20px;
+  text-align: center;
+  font-family: 'Tahoma', 'Arial', sans-serif;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0px 0 0 330px;
+  margin-right: -145px;
+}
+
+/* سکشن راست پرومو / Right promo section */
+.promo-sectionright {
+  background: linear-gradient(rgba(20, 20, 20, 0.44), rgba(25, 2, 69, 0.44)),
+              url('../../assets/images/image8.jpeg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  width: 112%;
+  color: #fff;
+  padding: 20px 20px;
+  text-align: center;
+  font-family: 'Tahoma', 'Arial', sans-serif;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 330px 0px 0;
+}
+
+/* استایل تیترها / Headings style */
+.promo-section h2,
+.promo-sectionright h2 {
+  font-size: clamp(1.5em, 2vw + 1em, 2.5em);
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  transform: translateX(-15%);
+}
+
+/* استایل پاراگراف‌ها / Paragraphs style */
+.promo-section p,
+.promo-sectionright p {
+  font-size: clamp(1em, 1.25vw + 0.5em, 1.5em);
+  max-width: 90%;
+  margin: 20px 0;
+  line-height: 1.25;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateX(-20%);
+}
+
+/* تغییرات خاص سکشن راست / Right section overrides */
+.promo-sectionright h2 {
+  transform: translateX(-40%);
+}
+
+.promo-sectionright p {
+  transform: translateX(-35%);
+}
+
+/* انیمیشن‌های تکراری برای جذابیت / Repeated animations */
+@keyframes slideInFromLeft {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* ریسپانسیو بین 768 تا 986 پیکسل / Responsive for tablets */
+@media (min-width: 768px) and (max-width: 986px) {
+  .promo-sectionright {
+    border-radius: 0 210px 0px 0;
+  }
+
+  .promo-section {
+    border-radius: 0 0px 0px 210px;
+  }
+
+  .promo-section h2,
+  .promo-sectionright h2 {
+    transform: translateX(-25%);
+  }
+
+  .promo-sectionright p,
+  .promo-section p {
+    transform: translateX(-25%);
+    max-width: 500px;
+  }
+}
+
+/* ریسپانسیو برای موبایل / Responsive for mobile */
+@media (max-width: 768px) {
+  .promo-sectionright {
+    padding: 15px;
+    margin-right: 0;
+    transform: none;
+    border-radius: 0 160px 0px 0;
+  }
+
+  .promo-section {
+    padding: 15px;
+    margin-right: 0;
+    transform: none;
+    border-radius: 0 0px 0px 160px;
+  }
+
+  .promo-section h2,
+  .promo-sectionright h2 {
+    font-size: 1.5em;
+    transform: translateX(-10%);
+  }
+
+  .promo-sectionright p {
+    font-size: 1.2em;
+    transform: translateX(2%);
+    max-width: 400px;
+  }
+
+  .promo-section p {
+    font-size: 1.2em;
+    transform: translateX(1%);
+    max-width: 500px;
+  }
+}

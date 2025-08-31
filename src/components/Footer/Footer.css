@@ -1,0 +1,77 @@
+/* شروع بخش فوتر / Start footer section */
+
+.footer {
+  background: linear-gradient(to right, #989393ff, #4b4c4cff);
+  color: #1e1d1dff;
+  padding: 50px 20px;
+  font-family: 'Vazir', sans-serif;
+  margin-top:20%;
+}
+
+.footer-cta {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-cta h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-cta p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #fff;
+  color: #da3949ff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 60px;
+  margin-bottom: 30px;
+ padding-right: 35px; 
+}
+
+.footer-grid h4 {
+color: #da3949e1;
+margin-bottom: 10px;
+font-size: 18px;
+}
+
+.footer-grid ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-grid li {
+  margin-bottom: 8px;
+}
+
+.footer-grid a {
+  color: #e2e0e0ff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-grid a:hover {
+  color: #da3949ff;
+}
+
+.social-icons a {
+  margin-right: 10px;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+}
