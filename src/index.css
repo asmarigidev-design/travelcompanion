@@ -18,7 +18,6 @@
 }
 
 body {
-  direction: rtl;
   background-color: rgb(212, 209, 209);
   overflow-x: hidden;
 }
@@ -153,6 +152,7 @@ html {
 .featured h1 {
   border-bottom: 4px solid #ff385c;
   display: inline;
+
 }
 
 .featured-wrapper {
@@ -213,6 +213,15 @@ html {
   .featured .main {
     grid-column: span 2;
   }
+  .featured {
+  text-align: center;
+}
+
+.featured h1 {
+  border-bottom: 4px solid #ff385c;
+  display: inline-block;
+}
+
 }
 
 @media screen and (max-width: 400px) {
@@ -225,6 +234,15 @@ html {
   .featured .main {
     grid-column: span 1;
   }
+  .featured {
+  text-align: center;
+}
+
+.featured h1 {
+  border-bottom: 4px solid #ff385c;
+  display: inline-block;
+}
+
 }
 
 /* منوهای کناری در موبایل - Side Menus on Mobile */

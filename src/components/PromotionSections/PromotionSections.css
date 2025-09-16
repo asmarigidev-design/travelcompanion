@@ -169,7 +169,7 @@
 
   .promo-sectionright p {
     font-size: 1.2em;
-    transform: translateX(2%);
+    transform: translateX(0.15%);
     max-width: 400px;
   }
 
